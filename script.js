@@ -95,7 +95,7 @@ function createFloatingDecoration() {
         (15 + Math.random() * 20) + 'px';
 
     decoration.style.animationDuration =
-        (7 + Math.random() * 😎 + 's';
+        (7 + Math.random() * 8) + 's';
 
     container.appendChild(decoration);
 
