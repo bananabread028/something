@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Something For You ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="floating-container"></div>
+
+<!-- WELCOME PAGE -->
+<section class="page active" id="home">
+    <p class="subtitle">A LITTLE SOMETHING, JUST FOR YOU</p>
+    <h1>A Little Something For You ♡</h1>
+
+    <div class="big-emoji">🧸🌷</div>
+
+    <p>
+        Someone deserves a little happiness today.
+        <br>
+        And I made something just for you.
+    </p>
+
+    <button onclick="go('gifts')">Open your little surprise ♡</button>
+</section>
+
+
+<!-- MAIN MENU -->
+<section class="page" id="gifts">
+    <h1>Just For You ♡</h1>
+    <p class="subtitle">A few little things I prepared</p>
+
+    <div class="collection">
+
+        <div class="item" onclick="go('flowers')">
+            <div class="picture">💐</div>
+            <h3>A Garden</h3>
+            <p>Flowers that remind me of you</p>
+        </div>
+
+        <div class="item" onclick="go('bear')">
+            <div class="picture">🧸</div>
+            <h3>Stuffed Animals</h3>
+            <p>Little things that match your personality</p>
+        </div>
+
+        <div class="item" onclick="go('letter')">
+            <div class="picture">💌</div>
+            <h3>A Letter</h3>
+            <p>Something I want you to know</p>
+        </div>
+
+        <div class="item" onclick="go('question')">
+            <div class="picture">💗</div>
+            <h3>One Question</h3>
+            <p>A little something at the end</p>
+        </div>
+
+    </div>
+
+    <button onclick="go('question')">Continue ♡</button>
+</section>
+
+
+<!-- FLOWERS -->
+<section class="page" id="flowers">
+
+    <h1>A Garden For You ♡</h1>
+
+    <p>
+        Every flower has its own kind of beauty,
+        <br>
+        just like every person has something special about them.
+    </p>
+
+    <p class="small">Tap each flower to discover its meaning.</p>
+
+    <div class="collection">
+
+        <div class="item" onclick="showDescription('flower1')">
+            <div class="picture">🌻</div>
+            <h3>Sunflower</h3>
+            <p>For the sunshine soul</p>
+        </div>
+
+        <div class="item" onclick="showDescription('flower2')">
+            <div class="picture">🌷</div>
+            <h3>Tulip</h3>
+            <p>For the gentle heart</p>
+        </div>
+
+        <div class="item" onclick="showDescription('flower3')">
+            <div class="picture">🌹</div>
+            <h3>Rose</h3>
+            <p>For the thoughtful soul</p>
+        </div>
+
+        <div class="item" onclick="showDescription('flower4')">
+            <div class="picture">🌼</div>
+            <h3>Daisy</h3>
+            <p>For the joyful spirit</p>
+        </div>
+
+        <div class="item" onclick="showDescription('flower5')">
+            <div class="picture">🪻</div>
+            <h3>Lavender</h3>
+            <p>For the calming presence</p>
+        </div>
+
+        <div class="item" onclick="showDescription('flower6')">
+            <div class="picture">🌸</div>
+            <h3>Cherry Blossom</h3>
+            <p>For the beautiful soul</p>
+        </div>
+
+    </div>
+
+    <!-- FLOWER DESCRIPTIONS -->
+
+    <div class="description" id="flower1">
+        <span class="desc-emoji">🌻</span>
+        <h2>Sunflower</h2>
+        You're like a sunflower. You remind people
+        that even ordinary days can be brighter.
+        Your presence brings warmth, positivity,
+        and a little happiness wherever you go.
+    </div>
+
+    <div class="description" id="flower2">
+        <span class="desc-emoji">🌷</span>
+        <h2>Tulip</h2>
+        You're like a tulip. There's something
+        beautiful about your gentle nature.
+        You don't need to be loud to make an
+        impression. Your kindness speaks for itself.
+    </div>
+
+    <div class="description" id="flower3">
+        <span class="desc-emoji">🌹</span>
+        <h2>Rose</h2>
+        You're like a rose. You have a special
+        way of making people feel valued.
+        You're thoughtful, memorable, and someone
+        whose presence is appreciated more than
+        you might realize.
+    </div>
+
+    <div class="description" id="flower4">
+        <span class="desc-emoji">🌼</span>
+        <h2>Daisy</h2>
+        You're like a daisy. You remind people
+        of simple happiness, genuine laughter,
+        and the beauty of being yourself.
+        You make little moments worth remembering.
+    </div>
+
+    <div class="description" id="flower5">
+        <span class="desc-emoji">🪻</span>
+        <h2>Lavender</h2>
+        You're like lavender. Your presence
+        feels peaceful and comforting.
+        You're the kind of person who makes
+        others feel that everything will be okay.
+    </div>
+
+    <div class="description" id="flower6">
+        <span class="desc-emoji">🌸</span>
+        <h2>Cherry Blossom</h2>
+        You're like a cherry blossom.
+        You remind people that beauty can be
+        found in the smallest moments.
+        There's something uniquely lovely about
+        the way you make memories with others.
+    </div>
+
+    <p class="small">
+        A flower for every kind of beautiful soul ♡
+    </p>
+
+    <button onclick="go('gifts')">Go back</button>
+</section>
+
+
+<!-- STUFFED ANIMALS -->
+<section class="page" id="bear">
+
+    <h1>A Little Plushie Corner ♡</h1>
+
+    <p>
+        If you were a stuffed animal,
+        I wonder which one would remind me of you.
+    </p>
+
+    <p class="small">Tap each plushie to discover its meaning.</p>
+
+    <div class="collection">
+
+        <div class="item" onclick="showDescription('bear1')">
+            <div class="picture">🧸</div>
+            <h3>Teddy Bear</h3>
+            <p>For the comforting one</p>
+        </div>
+
+        <div class="item" onclick="showDescription('bear2')">
+            <div class="picture">🐰</div>
+            <h3>Bunny</h3>
+            <p>For the gentle one</p>
+        </div>
+
+        <div class="item" onclick="showDescription('bear3')">
+            <div class="picture">🐻‍❄️</div>
+            <h3>Polar Bear</h3>
+            <p>For the quiet sweetheart</p>
+        </div>
+
+        <div class="item" onclick="showDescription('bear4')">
+            <div class="picture">🐱</div>
+            <h3>Kitty</h3>
+            <p>For the unique one</p>
+        </div>
+
+        <div class="item" onclick="showDescription('bear5')">
+            <div class="picture">🐼</div>
+            <h3>Panda</h3>
+            <p>For the lovable one</p>
+        </div>
+
+        <div class="item" onclick="showDescription('bear6')">
+            <div class="picture">🐸</div>
+            <h3>Frog</h3>
+            <p>For the silly sunshine</p>
+        </div>
+
+    </div>
+
+    <!-- STUFFED ANIMAL DESCRIPTIONS -->
+
+    <div class="description" id="bear1">
+        <span class="desc-emoji">🧸</span>
+        <h2>Teddy Bear</h2>
+        You remind me of a teddy bear because
+        there's something comforting about your
+        presence. You're someone people can feel
+        at ease around, and that's a wonderful
+        quality to have.
+    </div>
+
+    <div class="description" id="bear2">
+        <span class="desc-emoji">🐰</span>
+        <h2>Bunny</h2>
+        You remind me of a bunny because of your
+        gentle and thoughtful nature. You have
+        a special kind of sweetness that makes
+        even the simplest interactions memorable.
+    </div>
+
+    <div class="description" id="bear3">
+        <span class="desc-emoji">🐻‍❄️</span>
+        <h2>Polar Bear</h2>
+        You remind me of a polar bear because
+        you have a quiet kind of charm.
+        You might not always say much, but
+        your presence still makes a difference.
+    </div>
+
+    <div class="description" id="bear4">
+        <span class="desc-emoji">🐱</span>
+        <h2>Kitty</h2>
+        You remind me of a kitty because you're
+        wonderfully unique. You have your own
+        way of doing things, and that's exactly
+        what makes you interesting and memorable.
+    </div>
+
+    <div class="description" id="bear5">
+        <span class="desc-emoji">🐼</span>
+        <h2>Panda</h2>
+        You remind me of a panda because you have
+        a lovable personality. You're the kind
+        of person who can make people smile
+        without even trying.
+    </div>
+
+    <div class="description" id="bear6">
+        <span class="desc-emoji">🐸</span>
+        <h2>Frog</h2>
+        You remind me of a little frog because
+        you're full of unexpected fun.
+        Your silly moments, humor, and playful
+        side make ordinary days more entertaining.
+    </div>
+
+    <p class="small">
+        Different stuffed animals, different kinds of wonderful people ♡
+    </p>
+
+    <button onclick="go('gifts')">Go back</button>
+</section>
+
+
+<!-- LETTER -->
+<section class="page" id="letter">
+
+    <h1>My Little Letter 💌</h1>
+
+    <div class="letter">
+
+        <h2>Dear You, ♡</h2>
+
+        <p>
+            I just wanted to take a moment to tell
+            you something that I might not always say.
+        </p>
+
+        <p>
+            I'm genuinely glad that I got to know you.
+            Whether it's through random conversations,
+            silly moments, laughter, or even the simplest
+            interactions, you somehow make ordinary
+            days a little more special.
+        </p>
+
+        <p>
+            I hope you never forget how much you matter.
+            You deserve genuine happiness, good people,
+            wonderful experiences, and all the little
+            things that make life beautiful.
+        </p>
+
+        <p>
+            Thank you for being you. I hope we get to
+            share more memories, laugh at more random
+            things, and create moments worth remembering.
+        </p>
+
+        <p>
+            No matter how busy life gets, I hope you
+            always find reasons to smile.
+        </p>
+
+        <p class="signature">
+            With appreciation,<br>
+            Someone who thinks you're wonderful ♡
+        </p>
+
+    </div>
+
+    <button onclick="go('gifts')">Go back</button>
+</section>
+
+
+<!-- QUESTION -->
+<section class="page" id="question">
+
+    <h1>One Little Question...</h1>
+
+    <div class="big-emoji">💗</div>
+
+    <p>
+        Would you like to make more
+        <br>
+        wonderful memories together?
+    </p>
+
+    <div>
+        <button onclick="answer('yes')">YES ♡</button>
+
+        <button onclick="answer('ofcourse')">OF COURSE!</button>
+
+        <button onclick="answer('maybe')">MAYBE SOMEDAY</button>
+    </div>
+
+    <div class="answer" id="answer"></div>
+
+</section>
+
+
+<!-- ENDING -->
+<section class="page" id="ending">
+
+    <div class="heart">💗</div>
+
+    <h1>Thank You!</h1>
+
+    <p>
+        Whatever the days ahead may bring,
+        <br>
+        I hope they bring you plenty of happiness.
+    </p>
+
+    <p class="ending-message">
+        Stay wonderful, always. ♡
+    </p>
+
+    <div class="big-emoji">🌷🧸</div>
+
+    <button onclick="go('home')">Replay ♡</button>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
