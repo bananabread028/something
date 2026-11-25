@@ -90,12 +90,8 @@ function createFloatingDecoration() {
         decorations[Math.floor(Math.random() * decorations.length)];
 
     decoration.style.left = Math.random() * 100 + 'vw';
-
-    decoration.style.fontSize =
-        (15 + Math.random() * 20) + 'px';
-
-    decoration.style.animationDuration =
-        (7 + Math.random() * 8) + 's';
+    decoration.style.fontSize = (15 + Math.random() * 20) + 'px';
+    decoration.style.animationDuration = (7 + Math.random() * 8) + 's';
 
     container.appendChild(decoration);
 
