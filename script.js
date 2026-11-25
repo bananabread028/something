@@ -95,11 +95,12 @@ const decorations = [
 
 function createFloatingDecoration() {
 
-    const container =
-        document.getElementById('floating-container');
+  function createFloatingDecoration() {
+    const container = document.getElementById('floating-container');
+
+    if (!container) return;
 
     const decoration = document.createElement('div');
-
     decoration.className = 'floating';
 
     decoration.innerHTML =
@@ -107,21 +108,21 @@ function createFloatingDecoration() {
             Math.floor(Math.random() * decorations.length)
         ];
 
-    decoration.style.left =
-        Math.random() * 100 + 'vw';
+    decoration.style.left = Math.random() * 100 + 'vw';
 
     decoration.style.fontSize =
         (15 + Math.random() * 20) + 'px';
 
     decoration.style.animationDuration =
-        (7 + Math.random() * 😎 + 's';
+        (7 + Math.random() * 8) + 's';
 
     container.appendChild(decoration);
 
     setTimeout(() => {
         decoration.remove();
     }, 15000);
-}
+}  
+    
 
 
 /* START FLOATING ANIMATIONS */
