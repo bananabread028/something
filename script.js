@@ -93,8 +93,6 @@ const decorations = [
     '🦋'
 ];
 
-function createFloatingDecoration() {
-
   function createFloatingDecoration() {
     const container = document.getElementById('floating-container');
 
